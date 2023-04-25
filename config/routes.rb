@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   root to: "user/timeline#index"
+  # root to: "user/timeline#index"
 
   namespace :user do
     get 'profile', to: "profile#show"
