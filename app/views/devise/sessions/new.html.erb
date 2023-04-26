@@ -1,11 +1,10 @@
 <div style="height: 100%!important;background-image: url('<%= resource_name == :admin ? image_path('login_bg.jpeg') : image_path('login_user.png') %>'); background-size: cover">
-  <div class="offset-4 col-4 authentication-inner py-5">
+  <div class="offset-4 col-sm-4 authentication-inner py-5 mx-auto">
     <div class="card">
       <div class="p-4 p-sm-5">
         <div class="d-flex justify-content-center align-items-center pb-2 mb-4">
           <%= image_tag('logo', style: 'height: 90px;') %>
         </div>
-
         <% if resource_name == :admin %>
           <h5 class="text-center text-muted font-weight-normal mb-4">Acesso ao Painel Administrativo</h5>
         <% end %>

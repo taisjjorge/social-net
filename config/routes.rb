@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'profile/new'
+  get 'profile/create'
   devise_for :users, controllers: {registrations: 'users/registrations'}
   devise_for :admins, skip: [:registrations], controllers: {sessions: 'admins/sessions'}
 
@@ -10,7 +12,6 @@ Rails.application.routes.draw do
   end
 
   root to: "user/timeline#index"
-  # root to: "user/timeline#index"
 
   namespace :user do
     get 'profile', to: "profile#show"

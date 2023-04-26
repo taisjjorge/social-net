@@ -5,6 +5,3 @@
 
 
 .
-### Ambientes
-
-* [Acessar site em Produção](https://social-net-prod.herokuapp.com/).
