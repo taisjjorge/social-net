@@ -9,6 +9,7 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 import "./like_toggle"
+import "./comments_toggle"
 
 import $ from 'jquery';
 global.$ = jQuery;

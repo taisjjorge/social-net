@@ -1,10 +1,11 @@
 <div id="comment<%= comment.id %>">
-<div class="card text-white bg-dark mb-3 mt-3" style="font-size: 14px; background-color: #2652bf!important">
+<div class="card text-black bg-dark mb-3 mt-3" style="font-size: 14px; background-color: #cfcfcf!important">
 <div class="card-header d-flex justify-content-between">
+  <%= image_tag(comment.user.avatar, class: "ui-w-100-forced rounded-circle mr-3", style: "width: 20px; height: 20px") %> 
   <%= link_to comment.user.name, comment.user == current_user ? user_profile_path : user_user_path(post.user), remote: true %>
   
   <% if comment.user == current_user %>
-    <%= button_to user_comment_path(comment), :method => :delete, remote: true, class: "close text-white" do %>
+    <%= button_to user_comment_path(comment), :method => :delete, remote: true, class: "close text-black" do %>
       <span aria-hidden="true">&times;</span>
     <% end %>
   <% end %>

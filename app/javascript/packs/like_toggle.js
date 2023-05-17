@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 document.addEventListener("turbolinks:load", function () {
   
-  $(".like-toggle").click(function() {
+  $(".like-toggle").onclick(function() {
     var button = $(this)
     $.ajax({
       type: 'POST',
