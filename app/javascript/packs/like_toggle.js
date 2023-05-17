@@ -1,5 +1,5 @@
 //= require jquery
-var $ = require( "jquery" );
+import $ from 'jquery';
 
 document.addEventListener("turbolinks:load", function () {
   

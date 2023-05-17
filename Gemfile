@@ -85,3 +85,6 @@ gem "rspec-rails", "~> 4.0.1"
 gem 'rexml'
 
 gem 'jquery-rails'
+
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker', '~> 4.0'
